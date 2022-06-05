@@ -1,0 +1,29 @@
+.p-profiles-show .profile-head:before {
+    content: '';
+    display: block;
+    height: 300px; /* высота обложки */ 
+    background: url("https://raw.githubusercontent.com/johtai/my-shikimori-theme/master/img/header.jpg") no-repeat; /* кавычки должны быть */
+    background-size: cover; 
+    margin: -15px;
+    margin-bottom: 5px; /* отступ от нижней границы обложки */
+  }
+  
+  .p-profiles-show .b-feedback:after {
+    content: ''; /* "так надо" */
+    display: inline-block; /* не обязательно именно так, но "так надо" */
+    position: fixed; /* именно это свойство и его значение fixed
+                        и делает, чтобы изображение "прокручивалось" */
+    width: 300px; /* ширина изображения */
+    height: 300px; /* высота изображения */
+    right: 0px;  /* отступ справа, 0px значит, что отступа от правой границы нет*/
+    bottom: 0px; /* отступ снизу, 0px значит, что отступа от нижней границы нет*/
+    background: url("https://raw.githubusercontent.com/johtai/my-shikimori-theme/master/img/frederica.png") no-repeat;
+    background-size: cover; /* размер изображения будет подгоняться так,
+                               чтобы занять всё пространство, которое 
+                               задают width и height */
+    z-index: 10; /* изображение становится выше всех по z координате,
+                    тем самым всё остальное находится под ним*/
+    pointer-events: none; /* мышь перестаёт замечать изображение */
+  }
+  
+  
